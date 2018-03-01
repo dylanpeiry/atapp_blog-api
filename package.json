@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --max-old-space-size=4096 ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "events": "^1.1.1",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "mysql": "^2.15.0",
+    "node-datetime": "^2.0.3",
+    "serve-favicon": "~2.4.5",
+    "sha1": "^1.1.1"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
