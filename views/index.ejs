@@ -5,7 +5,119 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <table>
+        <tr>
+            <th>Method</th>
+            <th>URL</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td><a href="/auth">/auth</a></td>
+            <td>Vérifie si les informations de connexion sont correctes.</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/users">/users</a></td>
+            <td>Récupère la liste des utilisateurs</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td><a href="/users">/users</a></td>
+            <td>Ajouter un utilisateur</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/users/:id">/users/:id</a></td>
+            <td>Récupère un utilisateur par son id</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/users/get/usernames">/users/get/usernames</a></td>
+            <td>Récupère la liste des noms d'utilisateurs</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/users/get/usernames/:username">/users/get/usernames/:username</a></td>
+            <td>Vérifie si un nom d'utilisateur existe déjà</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/users/get/mails">/users/get/mails</a></td>
+            <td>Récupère la liste des mails</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/users/get/mails/:mail">/users/get/mails/:mail</a></td>
+            <td>Vérifie si un mail existe déjà</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/categories">/categories</a></td>
+            <td>Récupère la liste des catégories</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td><a href="/categories">/categories</a></td>
+            <td>Ajoute une catégorie</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/categories/:cat">/categories/:cat</a></td>
+            <td>Vérifie si une catégorie existe déjà</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/posts">/posts</a></td>
+            <td>Récupère lal iste des articles</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td><a href="/posts">/posts</a></td>
+            <td>Ajoute un article</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/posts/:id">/posts/:id</a></td>
+            <td>Récupère un article par son id</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td><a href="/posts/:id">/posts/:id</a></td>
+            <td>Modifie un article</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td><a href="/posts/:id">/posts/:id</a></td>
+            <td>Supprime un article</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/posts/:id/categories">/posts/:id/categories</a></td>
+            <td>Récupère la liste des catégories d'un article</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td><a href="/posts/:id/categories?ids=1,2,3">/posts/:id/categories?ids=1,2,3</a></td>
+            <td>Supprimer une ou des catégorie.s d'un article</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td><a href="/posts/:id/categories?names=web,new tech">/posts/:id/categories?names=web,new tech</a></td>
+            <td>Ajoute des catégories à un article</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/posts/status/:status">/posts/status/:status</a></td>
+            <td>Récupère la liste des articles par statut (Accepté, En Attente, Refusé)</td>
+        </tr>
+    </table>
   </body>
+  <style>
+      td {
+          border: 1px solid black;
+          padding: 10px;
+          text-align: center;
+      }
+  </style>
 </html>
