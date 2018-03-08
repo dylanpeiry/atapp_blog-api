@@ -12,6 +12,7 @@ let users = require('./routes/users');
 let auth = require('./routes/auth');
 let posts = require('./routes/posts');
 let categories = require('./routes/categories');
+let rte = require('./routes/rte');
 
 let app = express();
 
@@ -33,6 +34,7 @@ app.use('/users', users);
 app.use('/auth',auth);
 app.use('/posts',posts);
 app.use('/categories',categories);
+app.use('/rte',rte);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
